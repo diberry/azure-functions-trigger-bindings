@@ -1,9 +1,6 @@
 module.exports = async function (context, myQueueItem) {
-
-    // expect base 64 encoding
-
     context.log('JavaScript queue trigger function processed work item', myQueueItem);
-    context.log('Node.js queue trigger function processed work item', message);
+
     // OR access using context.bindings.<name>
     // context.log('Node.js queue trigger function processed work item', context.bindings.myQueueItem);
     context.log('expirationTime =', context.bindingData.expirationTime);
@@ -11,6 +8,5 @@ module.exports = async function (context, myQueueItem) {
     context.log('nextVisibleTime =', context.bindingData.nextVisibleTime);
     context.log('id =', context.bindingData.id);
     context.log('popReceipt =', context.bindingData.popReceipt);
-    context.log('dequeueCount =', context.bindingData.dequeueCount);
-
+    context.log('dequeueCount =', context.bindingData.dequeueCount);    
 };
