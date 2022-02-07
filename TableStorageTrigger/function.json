@@ -1,0 +1,16 @@
+{
+  "bindings": [
+    {
+      "name": "input",
+      "type": "manualTrigger",
+      "direction": "in"
+    },
+    {
+      "tableName": "Person",
+      "connection": "diberrystorage_STORAGE",
+      "name": "tableBinding",
+      "type": "table",
+      "direction": "out"
+    }    
+  ]
+}
