@@ -1,0 +1,14 @@
+{
+  "bindings": [
+    {
+      "type": "cosmosDBTrigger",
+      "name": "documents",
+      "direction": "in",
+      "leaseCollectionName": "leases",
+      "connectionStringSetting": "diberrymongodb_DOCUMENTDB",
+      "databaseName": "azurefunctiondb",
+      "collectionName": "fromqueue",
+      "createLeaseCollectionIfNotExists": true
+    }
+  ]
+}

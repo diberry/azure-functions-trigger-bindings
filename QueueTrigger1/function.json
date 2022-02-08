@@ -6,6 +6,15 @@
       "direction": "in",
       "queueName": "js-queue-items",
       "connection": "diberrystorage_STORAGE"
-    }
+    },
+    {
+      "name": "newItemDocument",
+      "type": "cosmosDB",
+      "databaseName": "azurefunctiondb",
+      "collectionName": "fromqueue",
+      "createIfNotExists": true,
+      "connectionStringSetting": "diberrymongodb_DOCUMENTDB",
+      "direction": "out"
+  }
   ]
 }
